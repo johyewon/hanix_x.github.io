@@ -26,11 +26,6 @@
 </header>
 <div class="content-wrapper">
     <div id="aside"></div>
-    <script>
-        $(document).ready(function() {
-            $('#aside').load('include/aside.html');
-        });
-    </script>
         <main>
             <section class="contact-section">
                 <h2 class="section-title">GET IN TOUCH</h2>
@@ -78,6 +73,11 @@
     <script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/resources/vendors/entry/jq.entry.min.js"></script>
     <script src="/resources/js/live-resume.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#aside').load('include/aside.html');
+    });
+</script>
 </body>
 
 </html>

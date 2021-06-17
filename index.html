@@ -25,12 +25,6 @@
             data-target="collapsible-nav"><img src="/resources/images/hamburger.svg" alt="hamburger"></button>
 </header>
 <div class="content-wrapper">
-    <div id="aside"></div>
-    <script>
-        $(document).ready(function() {
-            $('#aside').load('include/aside.html');
-        });
-    </script>
         <main>
             <section class="intro-section">
                 <h2 class="section-title">Hello, Daisy Murphy!</h2>
@@ -191,6 +185,11 @@
     <script src="/resources/vendors/popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/resources/js/live-resume.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#aside').load('include/aside.html');
+    });
+</script>
 </body>
 
 </html>
