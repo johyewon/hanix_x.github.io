@@ -12,7 +12,19 @@
 </head>
 
 <body>
-{% include topbar.html %}
+<header>
+    <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="/resources/images/share.svg" alt="share" class="btn-img">
+        SHARE</button>
+    <nav class="collapsible-nav" id="collapsible-nav">
+        <a href="https://johyewon.github.io" class="nav-link">HOME</a>
+        <a href="https://johyewon.github.io/resume" class="nav-link active">RESUME</a>
+        <a href="https://johyewon.github.io/portfolio" class="nav-link">PORTFOLIO</a>
+        <a href="https://johyewon.github.io/blog" class="nav-link">BLOG</a>
+        <a href="https://johyewon.github.io/contact" class="nav-link">CONTACT</a>
+    </nav>
+    <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="/resources/images/hamburger.svg" alt="hamburger"></button>
+</header>
 <div class="content-wrapper">
     {% include aside.html %}
         <main>
@@ -199,7 +211,7 @@
         </main>
     </div>
     <script src="/resources/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="/resources/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="/resources/vendors/popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/resources/js/live-resume.js"></script>
 </body>
