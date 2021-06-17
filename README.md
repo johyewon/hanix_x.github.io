@@ -6,6 +6,7 @@
 
 - 📫 hanix_x@naver.com
 - :computer: https://hanix-x.tistory.com/
+- :computer: https://johyewon.github.io/
 
 <!---
 johyewon/johyewon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
