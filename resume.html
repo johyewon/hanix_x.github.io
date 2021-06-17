@@ -25,7 +25,11 @@
             data-target="collapsible-nav"><img src="/resources/images/hamburger.svg" alt="hamburger"></button>
 </header>
 <div class="content-wrapper">
-    {% include aside.html %}
+    <script>
+        const header = document.getElementById("header");
+
+        header.innerHTML = '<object type="text/html" data="include/aside.html"></object>';
+    </script>
         <main>
             <section class="resume-section">
                 <div class="row">
