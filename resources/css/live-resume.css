@@ -3750,10 +3750,10 @@ input[type="button"].btn-block {
 
 .badge-primary {
   color: #ffffff;
-  background-color: #0067f6; }
+  background-color: #4D6AA2; }
   a.badge-primary:hover, a.badge-primary:focus {
     color: #ffffff;
-    background-color: #0052c3; }
+    background-color: #5677b8; }
   a.badge-primary:focus, a.badge-primary.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 103, 246, 0.5); }
