@@ -81,13 +81,15 @@
 
     const sendMail = function() {
         Email.send({
-            Host : "smtp.gmail.com",
-            Username : "e1cbd66dba8d46",
-            Password : "df8b30958789b4",
-            To : 'ixxwxfjlwf@gmail.com',
-            From : $('#email').val(),
-            Subject : "✉ " + $('#name').val() + "님에게 메일이 왔어요!",
-            Body : "<html><h2>Header</h2><strong>" +$('#comment').val() +"</strong></br><em>Italic</em></html>"
+            Host: "smtp.mailtrap.io",
+            port: '25',
+            Username: "e1cbd66dba8d46",
+            Password: "df8b30958789b4",
+            To: 'ixxwxfjlwf@gmail.com',
+            Auth: 'PLAIN',
+            From: $('#email').val(),
+            Subject: "✉ " + $('#name').val() + "님에게 메일이 왔어요!",
+            Body: "<html><h2>Header</h2><strong>" + $('#comment').val() + "</strong></br><em>Italic</em></html>"
         }).then(
             message => alert(message)
         );
