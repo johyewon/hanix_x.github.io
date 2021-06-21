@@ -28,8 +28,8 @@
     <div id="aside"></div>
         <main>
             <section class="contact-section">
-                <h2 class="section-title">GET IN TOUCH</h2>
-                <p class="mb-4">If you’d like to talk about a project, our work or anything else then get in touch.</p>
+                <h2 class="section-title">☎ GET IN TOUCH</h2>
+                <p class="mb-4">궁금하신 사항이나 연락을 하고 싶다면 아래 이메일 혹은 번호로 연락 주세요!</p>
                 
                 <div class="contact-cards-wrapper">
                     <div class="contact-card">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
 
-                <form action="mailto:ixxwxfjlwf@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <form class="contact-form">
                     <div class="form-group form-group-name">
                       <label for="name" class="sr-only">Name</label>
                       <input type="text" name="name" id="name" class="form-control" placeholder="NAME">
@@ -55,7 +55,7 @@
                         <label for="comment" class="sr-only">Message</label>
                         <textarea name="comment" id="comment" class="form-control" placeholder="MESSAGE" rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary form-submit-btn">SEND MESSAGE</button>
+                    <button type="submit" onclick="sendMail()" class="btn btn-primary form-submit-btn">SEND MESSAGE</button>
                 </form>
 
             </section>
@@ -73,10 +73,26 @@
     <script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/resources/vendors/entry/jq.entry.min.js"></script>
     <script src="/resources/js/live-resume.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     $(document).ready(function() {
         $('#aside').load('include/aside.html');
     });
+
+    const sendMail = function() {
+        Email.send({
+            Host : "smtp.mailtrap.io",
+            Username : "<Mailtrap username>",
+            Password : "<Mailtrap password>",
+            To : 'ixxwxfjlwf@gmail.com',
+            From : $('#email').val(),
+            Subject : "Test email",
+            Body : "<html><h2>Header</h2><strong>" +$('#comment') +"</strong><br></br><em>Italic</em></html>"
+        }).then(
+            message => alert(message)
+        );
+
+    }
 </script>
 </body>
 
