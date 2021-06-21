@@ -87,7 +87,7 @@
             To : 'ixxwxfjlwf@gmail.com',
             From : $('#email').val(),
             Subject : "✉ " + $('#name').val() + "님에게 메일이 왔어요!",
-            Body : "<html><h2>Header</h2><strong>" +$('#comment') +"</strong></br><em>Italic</em></html>"
+            Body : "<html><h2>Header</h2><strong>" +$('#comment').val() +"</strong></br><em>Italic</em></html>"
         }).then(
             message => alert(message)
         );
