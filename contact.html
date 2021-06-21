@@ -81,13 +81,13 @@
 
     const sendMail = function() {
         Email.send({
-            Host : "smtp.mailtrap.io",
+            SecureToken : "26af028c7fb8b3d16abc5cc311092554",
             Username : "e1cbd66dba8d46",
             Password : "df8b30958789b4",
             To : 'ixxwxfjlwf@gmail.com',
             From : $('#email').val(),
-            Subject : "Test email",
-            Body : "<html><h2>Header</h2><strong>" +$('#comment') +"</strong><br></br><em>Italic</em></html>"
+            Subject : "✉ " + $('#name').val() + "님에게 메일이 왔어요!",
+            Body : "<html><h2>Header</h2><strong>" +$('#comment') +"</strong></br><em>Italic</em></html>"
         }).then(
             message => alert(message)
         );
