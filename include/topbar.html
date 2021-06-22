@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="/resources/images/share.svg" alt="share" class="btn-img">
             SHARE</button>
         <nav class="collapsible-nav" id="collapsible-nav">
@@ -24,5 +24,13 @@
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
                 data-target="collapsible-nav"><img src="/resources/images/hamburger.svg" alt="hamburger"></button>
     </header>
+    <script type="text/javascript">
+        var browserInfo = navigator.userAgent;    // browserInfo 에 user agent 정보를 담습니다.
+        console.log(browserInfo);                                 // user agent 정보내용을 화면에 경고창으로 보여줍니다.
+        if(browserInfo.indexOf("HANIX_ANDROID") > -1) {
+            $('#header').css('display', 'none');
+        }
+
+    </script>
 </body>
 </html>
