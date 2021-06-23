@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="subject" content="Hani Portfolio"/>
+        <meta name="description" content="👋🏼 안드로이드 개발자 조혜원입니다"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HANI Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/vendors/fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/resources/css/live-resume.css">
+    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+<header  id="header">
+    <p class="ml-auto mr-3 ml-md-0 mr-md-auto"></p>
+    <nav class="collapsible-nav" id="collapsible-nav">
+        <a href="https://johyewon.github.io" class="nav-link">HOME</a>
+        <a href="https://johyewon.github.io/project" class="nav-link">PROJECT</a>
+        <a href="https://johyewon.github.io/skils" class="nav-link active">SKILLS</a>
+        <a href="https://johyewon.github.io/contact" class="nav-link">CONTACT</a>
+    </nav>
+    <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="/resources/images/hamburger.svg" alt="hamburger"></button>
+</header>
+<div class="content-wrapper">
+    <div id="aside"></div>
+    <main>
+        <section class="blog-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="blog-posts-wrapper">
+
+            </div>
+        </section>
+    </main>
+</div>
+<script src="/resources/vendors/jquery/dist/jquery.min.js"></script>
+<script src="/resources/vendors/popperjs/core/dist/umd/popper-base.min.js"></script>
+<script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/resources/vendors/entry/jq.entry.min.js"></script>
+<script src="/resources/js/live-resume.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#aside').load('include/aside.html');
+    });
+
+    var browserInfo = navigator.userAgent;    // browserInfo 에 user agent 정보를 담습니다.
+    console.log(browserInfo);                                 // user agent 정보내용을 화면에 경고창으로 보여줍니다.
+    if(browserInfo.indexOf("HANIX_ANDROID") > -1) {
+        console.log('android');
+        document.getElementById('header').style.visibility = 'hidden';
+        document.getElementById('header').style.display = 'none';
+    }
+</script>
+</body>
+
+</html>

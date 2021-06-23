@@ -14,11 +14,12 @@
 </head>
 
 <body>
-<header>
+<header  id="header">
     <p class="ml-auto mr-3 ml-md-0 mr-md-auto"></p>
     <nav class="collapsible-nav" id="collapsible-nav">
         <a href="https://johyewon.github.io" class="nav-link">HOME</a>
         <a href="https://johyewon.github.io/project" class="nav-link active">PROJECT</a>
+        <a href="https://johyewon.github.io/skils" class="nav-link">SKILLS</a>
         <a href="https://johyewon.github.io/contact" class="nav-link">CONTACT</a>
     </nav>
     <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
@@ -84,6 +85,14 @@
     $(document).ready(function() {
         $('#aside').load('include/aside.html');
     });
+
+    var browserInfo = navigator.userAgent;    // browserInfo 에 user agent 정보를 담습니다.
+    console.log(browserInfo);                                 // user agent 정보내용을 화면에 경고창으로 보여줍니다.
+    if(browserInfo.indexOf("HANIX_ANDROID") > -1) {
+        console.log('android');
+        document.getElementById('header').style.visibility = 'hidden';
+        document.getElementById('header').style.display = 'none';
+    }
 </script>
 </body>
 
