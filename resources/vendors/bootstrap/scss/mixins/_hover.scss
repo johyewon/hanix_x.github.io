@@ -11,12 +11,14 @@
 
 @mixin hover() {
   &:hover { @content; }
+  cursor: url(/resources/images/cursor.cur), auto;
 }
 
 @mixin hover-focus() {
   &:hover,
   &:focus {
     @content;
+    cursor: url(/resources/images/cursor.cur), auto;
   }
 }
 
@@ -25,6 +27,7 @@
   &:hover,
   &:focus {
     @content;
+    cursor: url(/resources/images/cursor.cur), auto;
   }
 }
 
@@ -33,5 +36,6 @@
   &:focus,
   &:active {
     @content;
+    cursor: url(/resources/images/cursor.cur), auto;
   }
 }

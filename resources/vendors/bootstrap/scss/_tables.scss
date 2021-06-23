@@ -87,6 +87,7 @@
     @include hover() {
       color: $table-hover-color;
       background-color: $table-hover-bg;
+      cursor: url(/resources/images/cursor.cur), auto;
     }
   }
 }

@@ -131,6 +131,7 @@ a {
 a:hover {
   color: #5677b8;
   text-decoration: underline;
+  cursor: url(/resources/images/cursor.cur), auto;
 }
 
 a:not([href]) {

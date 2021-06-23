@@ -46,6 +46,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: url(/resources/images/cursor.cur), auto;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -142,7 +143,9 @@ a {
   background-color: transparent; }
   a:hover {
     color: #5677b8;
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: url(/resources/images/cursor.cur), auto;
+  }
 
 a:not([href]) {
   color: inherit;
@@ -1820,7 +1823,9 @@ textarea.form-control {
       transition: none; } }
   .btn:hover {
     color: #000000;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: url(/resources/images/cursor.cur), auto;
+  }
   .btn:focus, .btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 103, 246, 0.25); }
@@ -1838,7 +1843,9 @@ fieldset:disabled a.btn {
   .btn-primary:hover {
     color: #ffffff;
     background-color: #5677b8;
-    border-color: #5677b8; }
+    border-color: #5677b8;
+    cursor: url(/resources/images/cursor.cur), auto;
+  }
   .btn-primary:focus, .btn-primary.focus {
     color: #ffffff;
     background-color: #5677b8;
@@ -2097,7 +2104,9 @@ fieldset:disabled a.btn {
   .btn-outline-primary:hover {
     color: #ffffff;
     background-color: #5677b8;
-    border-color: #5677b8; }
+    border-color: #5677b8;
+    cursor: url(/resources/images/cursor.cur), auto;
+  }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 103, 246, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -3490,7 +3499,8 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
 
 .card-link:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: url(/resources/images/cursor.cur), auto;}
 
 .card-link + .card-link {
   margin-left: 1.25rem; }
