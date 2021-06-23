@@ -159,7 +159,7 @@ a {
 }
 
 a:hover {
-  color: #5677b8;
+  color: #8fa3c9;
   text-decoration: underline;
 }
 
@@ -2564,8 +2564,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #5677b8;
-  border-color: #5677b8;
+  background-color: #8fa3c9;
+  border-color: #8fa3c9;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2584,8 +2584,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #5677b8;
-  border-color: #5677b8;
+  background-color: #8fa3c9;
+  border-color: #8fa3c9;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -2859,8 +2859,8 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #5677b8;
-  border-color: #5677b8;
+  background-color: #8fa3c9;
+  border-color: #8fa3c9;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2868,15 +2868,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #5677b8;
+  color: #8fa3c9;
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #5677b8;
-  border-color: #5677b8;
+  background-color: #8fa3c9;
+  border-color: #8fa3c9;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -3115,7 +3115,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #5677b8;
+  color: #8fa3c9;
   text-decoration: underline;
 }
 
@@ -3409,7 +3409,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #5677b8;
+  background-color: #8fa3c9;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -5012,7 +5012,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #5677b8;
+  color: #8fa3c9;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -10039,7 +10039,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #5677b8 !important;
+  color: #8fa3c9 !important;
 }
 
 .text-secondary {
