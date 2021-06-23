@@ -58,21 +58,8 @@ body {
   line-height: 1.5;
   color: #000000;
   text-align: left;
-  cursor: none;
-  background-color: #f3f3f3; }
-
-.cursor {
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1000;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transition-property: background, transform;
-  transform-origin: 100% 100%;
+  background-color: #f3f3f3;
+  cursor: url(/resources/images/cursor.cur), auto;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
