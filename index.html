@@ -129,19 +129,6 @@
     <script src="/resources/vendors/popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/resources/js/live-resume.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#aside').load('include/aside.html');
-    });
-
-    var browserInfo = navigator.userAgent;    // browserInfo 에 user agent 정보를 담습니다.
-    console.log(browserInfo);                                 // user agent 정보내용을 화면에 경고창으로 보여줍니다.
-    if(browserInfo.indexOf("HANIX_ANDROID") > -1) {
-        console.log('android');
-        document.getElementById('header').style.visibility = 'hidden';
-        document.getElementById('header').style.display = 'none';
-    }
-</script>
 </body>
 
 </html>
