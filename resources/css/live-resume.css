@@ -7653,6 +7653,13 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2.125rem; }
+  main .section_sub_title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2.125rem;
+  }
   main .section-subtitle {
     font-size: 12px;
     font-weight: 500;
